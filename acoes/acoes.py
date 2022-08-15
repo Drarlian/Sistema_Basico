@@ -22,12 +22,20 @@ def cadastrar(nome, idade, email, nome_usuario, senha):
 
 def ler(janela, arq):
     import os
+    from time import sleep
 
     if arq == 'arq1':
         os.startfile('dados\\livro1.txt')
+        sleep(8)
+        # Fechar o arquivo: (Apenas no windows)
+        os.system('taskkill /f /im Notepad.exe')
+
 
     elif arq == 'arq2':
         os.startfile('dados\\livro2.txt')
+        sleep(8)
+        # Fechar o arquivo: (Apenas no windows)
+        os.system('taskkill /f /im Notepad.exe')
 
 
 def logout(janela):  # A interface gerada aqui deveria estar no visual.
