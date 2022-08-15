@@ -26,14 +26,14 @@ def ler(janela, arq):
 
     if arq == 'arq1':
         os.startfile('dados\\livro1.txt')
-        sleep(8)
+        sleep(8)  # Tempo X de leitura do arquivo.
         # Fechar o arquivo: (Apenas no windows)
         os.system('taskkill /f /im Notepad.exe')
 
 
     elif arq == 'arq2':
         os.startfile('dados\\livro2.txt')
-        sleep(8)
+        sleep(8)  # Tempo X de leitura do arquivo.
         # Fechar o arquivo: (Apenas no windows)
         os.system('taskkill /f /im Notepad.exe')
 
