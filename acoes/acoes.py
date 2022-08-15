@@ -30,7 +30,7 @@ def ler(janela, arq):
         os.startfile('dados\\livro2.txt')
 
 
-def logout(janela):
+def logout(janela):  # A interface gerada aqui deveria estar no visual.
     from visual.visual import alerta_sucesso_menu
 
 

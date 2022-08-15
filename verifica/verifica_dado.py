@@ -1,6 +1,3 @@
-from tkinter import *
-
-
 def verifica_formulario(respostas, janela):
     from visual.visual import menu, alerta_problema, alerta_sucesso_menu
 
@@ -135,7 +132,7 @@ def verifica_email_existe(email):
 
 
 def verifica_login(usuario, senha, janela):
-    from visual.visual import menu, alerta_problema, menu_login
+    from visual.visual import alerta_problema, alerta_sucesso_menu_login
 
     if (len(usuario) == 0) or (len(senha) == 0):
         alerta_problema('Campo Vazio Detectado!', janela)
@@ -146,13 +143,7 @@ def verifica_login(usuario, senha, janela):
     senha = verifica_senha_L(senha, n_usuario)
 
     if usuario and senha:
-        alerta = Toplevel(janela)
-        alerta.title('Aviso')
-
-        texto = Label(alerta, text='Acesso Permitido!')
-        texto.pack(padx=10, pady=10)
-
-        menu_login(janela)
+        alerta_sucesso_menu_login('Acesso Permitido!', janela)
     else:
         alerta_problema('Acesso Negado!', janela)
 

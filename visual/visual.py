@@ -301,6 +301,17 @@ def alerta_sucesso_menu(mensagem, janela, acesso_cadastro):
     # -> Depois de 2s eu chamo a função menu e passo janela como parametro.
 
 
+def alerta_sucesso_menu_login(mensagem, janela):
+    aviso = Toplevel(janela)
+    aviso.title('Aviso')
+
+    texto = Label(aviso, text=mensagem)
+    texto.pack(padx=10, pady=10)
+
+    aviso.after(2000, lambda: menu_login(janela))  # -> Voltando para janela menu.
+    # -> Depois de 2s eu chamo a função menu e passo janela como parametro.
+
+
 def atalho(janela):
     from verifica.verifica_dado import verifica_atalho
     ata = Toplevel(janela)
