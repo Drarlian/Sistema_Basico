@@ -1,0 +1,6 @@
+USUARIO 0; NOME:Witor; IDADE:16; EMAIL:Witor@hotmail.com; USUARIO:Witinho; SENHA:123456
+USUARIO 1; NOME:Roberto; IDADE:22; EMAIL:Roberto@gmail.com; USUARIO:Robertinho; SENHA:654321
+USUARIO 2; NOME:Flavio; IDADE:102; EMAIL:Flavinho@gmail.com; USUARIO:Flavinho; SENHA:123456
+USUARIO 3; NOME:Yasmin; IDADE:34; EMAIL:Witor@hotmail.com; USUARIO:Yaya; SENHA:123456
+USUARIO 4; NOME:Logan; IDADE:87; EMAIL:Witore@hotmail.com; USUARIO:Lolo; SENHA:123456
+USUARIO 5; NOME:Jasmin; IDADE:56; EMAIL:Jasmin@gmail.com; USUARIO:Jasmiin; SENHA:123456
