@@ -1,12 +1,16 @@
 def verifica_formulario(respostas, janela):
-    from visual.visual import menu, alerta_problema, alerta_sucesso_menu
+    from visual.visual import alerta_problema, alerta_sucesso_menu
 
+    # gabarito = ['Horda', 'Melee', 'Paladino']
     gabarito = ('Horda', 'Melee', 'Paladino')
 
     for elemento in respostas:
         if len(elemento) == 0:
             alerta_problema('Resposta Vazia Detectada!', janela)
             return None
+
+    # respostas = [resposta.capitalize() for resposta in respostas]
+    respostas = (respostas[0].capitalize(), respostas[1].capitalize(), respostas[2].capitalize())
 
 
     if respostas == gabarito:
